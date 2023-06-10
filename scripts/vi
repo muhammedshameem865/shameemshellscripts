@@ -1,0 +1,12 @@
+#!/bin/bash
+
+USERS="shameem rufaida zayan fazan"
+
+for usr in $USERS
+do
+echo " ############################### "
+echo " adding user $usr "
+useradd $usr
+id $usr
+echo " ################################ "
+done
